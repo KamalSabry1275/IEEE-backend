@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>information</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                height: 100vh;
+                background-color: #112233;
+                color: #112233;
+            }
+            .view{
+                display: flex;
+                flex-basis: 50%;
+                flex-direction: column;
+                background-color: #ffffff;
+                box-shadow: inset 0px 0px 10px black;
+                border-radius: 5%;
+            }
+            @media (max-width: 1023px ){
+                .view{
+                    flex-direction: column;
+                    flex-basis: 70%;
+                }
+            }
+
+            @media (max-width: 641px ){
+                .view{
+                    flex-direction: column;
+                    flex-basis: 90%;
+                }
+            }
+
+            .card{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px;
+            }
+            .card_submit{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+            }
+            textarea,input,select{
+                width: 300px;
+                padding: 0;
+                margin: 0;
+            }
+            #books,#online_resources,#phone_apps,#magazines,#yes,#no{
+                width: 20px;
+                height: 20px;
+            }
+            .skills_card{
+                display: grid;
+                grid-template-columns: 180px 180px;
+                grid-template-rows: 1fr;
+                width: 300px;
+            }
+            .gbox{
+                width:300px;
+            }
+            label{
+                width: fit-content;
+                font-size: 20px;
+                margin-right: 8px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="view">
+            <form action="home.html" method="post">
+                <center><h1>Employee Interest Survey form</h1></center>
+                <div class="card">
+                    <label>Enter your name: </label>
+                    <input type="text" name="name">
+                </div>
+                <div class="card">
+                    <label>Enter your department: </label>
+                    <input type="text" name="department">
+                </div>
+                <div class="card">
+                    <label>Tell us a little about yourself: </label>
+                    <textarea name="infoBox" rows="4" cols="50"></textarea>
+                </div>
+                <div class="card">
+                    <label>Do you exercise at home? </label>
+                    <div class="gbox">
+                        <input type="radio" id="yes" name="exercise" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="exercise" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="card">
+                    <label>How do you like to resd about your favorite topics? </label>
+                    <div class="skills_card">
+                        <div>
+                            <div>
+                                <input type="checkbox" id="books" value="Books" name="topics[]">
+                                <label for = "books">Books</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="online_resources" value="Online resources" name="topics[]">
+                                <label for = "online_resources">Online resources</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox" id="phone_apps" value="Phone apps" name="topics[]">
+                                <label for = "phone_apps">Phone apps</label>
+                            </div>
+                            <div>
+                                <input type="checkbox"  id="magazines" value="Magazines" name="topics[]">
+                                <label for = "magazines">Magazines</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <label>What genre of movies do you like? </label>
+                    <select name="country">
+                        <option value="Comedy">Comedy</option>
+                        <option value="Action">Action </option>
+                        <option value="Adventure ">Adventure </option>
+                        <option value="War">War</option>
+                        <option value="Sci ">Sci </option>
+                        <option value="Romance ">Romance </option>
+                        <option value="Crime ">Crime </option>
+                        <option value="Drama ">Drama </option>
+                        <option value="Mystery ">Mystery </option>
+                        <option value="Fantasy ">Fantasy </option>
+                        <option value="History ">History </option>
+                        <option value="Horror ">Horror </option>
+                        <option value="Muscial">Muscial</option>
+                    </select>
+                </div>
+                <div class="card_submit">
+                    <input type="submit" name="submit">
+                </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
