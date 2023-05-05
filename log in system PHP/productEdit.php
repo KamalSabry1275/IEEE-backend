@@ -26,8 +26,8 @@
                 <div class="card-body">
                     <form action="includes/productEdit.inc.php" method="post">
                         <input type="text" name="productname" placeholder="product_name"
-                            value="<?php echo $_GET["productname"];?> " hidden>
-                        <input type="text" value="<?php echo $_GET["productname"];?> " disabled>
+                            value="<?php echo $_GET["productname"];?>" hidden>
+                        <input type="text" value="<?php echo $_GET["productname"];?>" disabled>
                         <input type="text" name="price" placeholder="price" value="<?php echo $_GET["price"];?>">
                         <input type="submit" name="submit" value="Edit">
                     </form>

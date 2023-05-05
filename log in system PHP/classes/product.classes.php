@@ -38,11 +38,6 @@ class product extends dbh{
     protected function editProduct($price,$productname,$username){
         $stmt = $this->connect()->prepare("UPDATE Products SET price=:price  WHERE productname=:productname AND username=:username;");
         $stmt->execute(array(":price" => $price,":productname" => $productname,":username" => $username));
-        // if (!$stmt->execute(array(":price" => '$price',":productname" => '$productname',":username" => '$username'))) {
-        //     $stmt = null;
-        //     header("location: ../home.php?error=stmtfailed");
-        //     exit();
-        // }
     } 
 
     protected function delete($productname,$username){
