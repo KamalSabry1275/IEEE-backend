@@ -3,7 +3,7 @@ class dbh {
     protected function connect(){
         try {
             $username = "postgres";
-            $password = "01285036540Max";
+            $password = "";
             $host = "localhost";
             $port = "5432";
             $dbName = "project3";
