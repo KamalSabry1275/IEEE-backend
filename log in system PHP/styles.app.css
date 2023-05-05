@@ -1,0 +1,71 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.nav button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* App form styles */
+.app-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-form h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for product handling form */
+
+
+.product-handling-form {
+    display: inline-block;
+    margin: 20px;
+}
+
+.product-handling-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-handling-form button:hover {
+    opacity: 0.8;
+}
